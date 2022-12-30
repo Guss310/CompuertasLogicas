@@ -4,32 +4,76 @@
         <name>Library</name>
     </assembly>
     <members>
-        <member name="T:ClassLibrary.Train">
+        <member name="T:Library.Gate">
             <summary>
-            Esta clase representa un tren muy básico.
+            Creamos la clase Gate para realizar la implementación de la interfaz IInput
             </summary>
         </member>
-        <member name="P:ClassLibrary.Train.IsEngineStarted">
+        <member name="P:Library.Gate.Name">
             <summary>
-            Obtiene un valor que indica si las maquinas del tren han sido encendidas o no.
+            Establecemos las properties
             </summary>
-            <value><c>true</c> si las máquinas fueron encendidas, <c>false</c> en caso contrario.</value>
         </member>
-        <member name="M:ClassLibrary.Train.StartEngines">
+        <member name="M:Library.Gate.#ctor(System.String)">
             <summary>
-            Enciende las máquinas del tren.
+            Se genera el
             </summary>
-            <returns>
-            <c>true</c> si las máquinas pueden ser encendidas, <c>false</c> en caso contrario.
-            </returns>
         </member>
-        <member name="M:ClassLibrary.Train.StopEngines">
+        <member name="M:Library.Gate.AddInput(Library.IInput)">
             <summary>
-            Detiene las máquinas del tren.
+            Este método agrega el input
             </summary>
-            <returns>
-            <c>true</c> si las máquinas pueden ser detenidas, <c>false</c> en caso contrario.
-            </returns>
+        </member>
+        <member name="M:Library.Gate.Calculate">
+            <summary>
+            Método para hacer el calculo
+            </summary>
+        </member>
+        <member name="T:Library.Gate_and">
+            <summary>
+            Clase Gate_and quehereda de la clase Gate
+            </summary>
+        </member>
+        <member name="M:Library.Gate_and.Calculate">
+            <summary>
+            implementamos el metodo "Calculate", en base a lo que necesita la clase Gate_and
+            </summary>
+        </member>
+        <member name="T:Library.Gate_not">
+            <summary>
+            Clase Gate_not que hereda de la clase Gate
+            </summary>
+        </member>
+        <member name="M:Library.Gate_not.Calculate">
+            <summary>
+            implementamos el metodo "Calculate", en base a lo que necesita la clase Gate_not
+            </summary>
+        </member>
+        <member name="T:Library.Gate_or">
+            <summary>
+            Clase Gate_or que hereda de la clase Gate
+            </summary>
+        </member>
+        <member name="M:Library.Gate_or.Calculate">
+            <summary>
+            implementamos el metodo "Calculate", en base a lo que necesita la clase Gate_or 
+            </summary>
+        </member>
+        <member name="T:Library.IInput">
+            <summary>
+            interfaz del input
+            </summary>
+        </member>
+        <member name="M:Library.IInput.Calculate">
+            <summary>
+            método que devuelve el valor de la compuerta
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Library.LogicInput">
+            <summary>
+            Clase creada para los inputs de valores lógicos
+            </summary>
         </member>
     </members>
 </doc>
